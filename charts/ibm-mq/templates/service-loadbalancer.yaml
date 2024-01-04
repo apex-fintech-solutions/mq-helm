@@ -25,7 +25,7 @@ metadata:
   {{- end }}    
 spec:
   type: LoadBalancer
-  loadBalancerIP: {{ .Values.route.loadBalancer.loadBalancerIP }}
+  loadBalancerIP: "{{ .Values.route.loadBalancer.loadBalancerIP }}"
   ports:
   {{- if .Values.route.loadBalancer.mqtraffic }}
   - port: 1414
